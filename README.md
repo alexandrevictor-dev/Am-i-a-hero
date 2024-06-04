@@ -4,18 +4,27 @@
 ---
  -Godot funciona com Nodes, juntamos alguns nodes em um uma cena para formar fases, menus, personagens, objetos, etc.
 ---
-# Gráficos 2D:
+## Gráficos 2D:
 - Caso o jogo inicie com um "blur" ao invés de uma imagem clean, faça o seguinte:
 - configurações do projeto
 - Renderização > Textura > Default Texture Filter > Nearest
 
-# Cena2D
+## Cena2D
 * Crie uma Cena2D - renomeie de Game ou fase1(como desejar, é aqui que o jogo irá rodar e onde você ira arrastar todos os objetos desejados (monstros, itens, player etc))
 * Crie uma Camera2D - Dê o zoom que desejar para aumentar ou diminuir a tela
    * Arraste-o para cima do Player
-* Crie um StaticBody -
-   * Crie um CollisionShape - NewWorldBoundaryShape
-   * Ele se extende infinitamente na horizontal (e outras direções, caso seja rotacionado)
+   * no GameTree, arraste a Camera para dentro do Player
+   * no Inspector (Lateral direita): Position Smoothing: ENABLE ON
+* Crie um Tilemap
+   * em Tileset, selecione NewTileSet
+   * configure o TileSize de acordo com o tileset a ser usado!
+   * Na parte de baixo, em TileSet, arraste as imagens tiles desejados
+   * Apague e selecione corretamente cada tile (arvores por exemplo podem ser usados como um tile só)
+   * Na parte lateral em **Physics Layer**:
+      * Add Element e agora na parte de baixo:
+      * Clique em Paint > Paint Properties e seleciona o layer que quer que tenha física
+      * pinte os tiles
+   * no GameTree,arraste o TileMap para o topo (fica fácil de achar)
 
 
 

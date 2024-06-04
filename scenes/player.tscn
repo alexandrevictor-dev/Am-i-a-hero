@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://bnlqmni1vxkoy"]
+
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_6j312"]
+[ext_resource type="Texture2D" uid="uid://cj1374871cyvk" path="res://assets/01 - Hobbit/pngs/Hobbit - Idle1.png" id="2_tkayv"]
+[ext_resource type="Texture2D" uid="uid://b7yr2g0acfk1x" path="res://assets/01 - Hobbit/pngs/Hobbit - Idle2.png" id="3_fo5nm"]
+[ext_resource type="Texture2D" uid="uid://c0rhrjuna625x" path="res://assets/01 - Hobbit/pngs/Hobbit - Idle3.png" id="4_m1oka"]
+[ext_resource type="Texture2D" uid="uid://sekg4ug3l2y8" path="res://assets/01 - Hobbit/pngs/Hobbit - Idle4.png" id="5_2mdjk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_corcm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_tkayv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fo5nm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_m1oka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2mdjk")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 7.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sv8j1"]
+radius = 4.0
+height = 14.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_6j312")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(7, -7)
+sprite_frames = SubResource("SpriteFrames_corcm")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.766555
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7, -7)
+shape = SubResource("CapsuleShape2D_sv8j1")
