@@ -28,7 +28,7 @@ Usarei esse ReadMe para fazer anotações e passos a seguir.
 
 
 
- # Criando um player:
+ ## Criando um player:
  * Como mencionado anteriormente, deve-se criar uma Nova Cena (SEMPRE PARA QUALQUER NOVO ITEM, OBJETO, FASE)
  * Character Body - renomeie de Player
  * Animated Sprite - e arrasta os sprites desejados para a área (tilesheet ou diversos frames)
