@@ -1,6 +1,6 @@
 # Am i a hero
- Jogo que estou criando para aprender a programar jogos em Godot!
- Usarei esse ReadMe para fazer anotações e passos a seguir.
+Jogo que estou criando para aprender a programar jogos em Godot!
+Usarei esse ReadMe para fazer anotações e passos a seguir.
 ---
  -Godot funciona com Nodes, juntamos alguns nodes em um uma cena para formar fases, menus, personagens, objetos, etc.
 ---
