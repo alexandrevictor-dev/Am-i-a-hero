@@ -1,6 +1,6 @@
 # Am i a hero
- Jogo que estou criando para aprender a programar jogos em Godot!
- Usarei esse ReadMe para fazer anotações e passos a seguir.
+Jogo que estou criando para aprender a programar jogos em Godot!
+Usarei esse ReadMe para fazer anotações e passos a seguir.
 ---
  -Godot funciona com Nodes, juntamos alguns nodes em um uma cena para formar fases, menus, personagens, objetos, etc.
 ---
@@ -20,7 +20,7 @@
    * configure o TileSize de acordo com o tileset a ser usado!
    * Na parte de baixo, em TileSet, arraste as imagens tiles desejados
    * Apague e selecione corretamente cada tile (arvores por exemplo podem ser usados como um tile só)
-   * Na parte lateral em **Physics Layer**:
+   * Na parte lateral em Tileset > **Physics Layer**:
       * Add Element e agora na parte de baixo:
       * Clique em Paint > Paint Properties e seleciona o layer que quer que tenha física
       * pinte os tiles
@@ -28,7 +28,7 @@
 
 
 
- # Criando um player:
+ ## Criando um player:
  * Como mencionado anteriormente, deve-se criar uma Nova Cena (SEMPRE PARA QUALQUER NOVO ITEM, OBJETO, FASE)
  * Character Body - renomeie de Player
  * Animated Sprite - e arrasta os sprites desejados para a área (tilesheet ou diversos frames)
