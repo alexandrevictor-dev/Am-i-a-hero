@@ -10,20 +10,27 @@
 - Renderização > Textura > Default Texture Filter > Nearest
 
 # Cena2D
-* Crie uma Cena2D - renomeie de Game
+* Crie uma Cena2D - renomeie de Game ou fase1(como desejar, é aqui que o jogo irá rodar e onde você ira arrastar todos os objetos desejados (monstros, itens, player etc))
 * Crie uma Camera2D - Dê o zoom que desejar para aumentar ou diminuir a tela
+   * Arraste-o para cima do Player
+* Crie um StaticBody -
+   * Crie um CollisionShape - NewWorldBoundaryShape
+   * Ele se extende infinitamente na horizontal (e outras direções, caso seja rotacionado)
 
 
 
  # Criando um player:
- * Como mencionado anteriormente, deve-se criar uma Nova Cena
+ * Como mencionado anteriormente, deve-se criar uma Nova Cena (SEMPRE PARA QUALQUER NOVO ITEM, OBJETO, FASE)
  * Character Body - renomeie de Player
  * Animated Sprite - e arrasta os sprites desejados para a área (tilesheet ou diversos frames)
     * Coloque autoplay para a animação iniciar junto com o jogo
     * A partir daqui pode testar a animação e adicionar a velocidade ou diminuir, como desejar.
     * Para uma boa prática de programação, renomeie as animações de acordo "Idle, run, death, hit..."
     * Arraste a imagem para cima da linha
-* CollisionShape
+* CollisionShape -
    * em Shape, adicione o formato desejado (NewCircle,NewCapsule...)
+* No Node principal (player)
+   * Adicione Script e salve-o na pasta correta (scripts)
+   * Pode adicionar o template já pronto para facilitar, mas futuramente altere para ficar bem de acordo com o tipo de jogo.
 
 
