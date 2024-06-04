@@ -20,7 +20,7 @@ Usarei esse ReadMe para fazer anotações e passos a seguir.
    * configure o TileSize de acordo com o tileset a ser usado!
    * Na parte de baixo, em TileSet, arraste as imagens tiles desejados
    * Apague e selecione corretamente cada tile (arvores por exemplo podem ser usados como um tile só)
-   * Na parte lateral em **Physics Layer**:
+   * Na parte lateral em Tileset > **Physics Layer**:
       * Add Element e agora na parte de baixo:
       * Clique em Paint > Paint Properties e seleciona o layer que quer que tenha física
       * pinte os tiles
