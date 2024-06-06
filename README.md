@@ -1,6 +1,6 @@
 # Am i a hero
-Jogo que estou criando para aprender a programar jogos em Godot!
-Usarei esse ReadMe para fazer anotações e passos a seguir.
+## Jogo que estou criando para aprender a programar jogos em Godot!
+## Usarei esse ReadMe para fazer anotações e passos a seguir.
 ---
 - Godot funciona com Nodes, juntamos alguns nodes em um uma cena para formar fases, menus, personagens, objetos, etc.
 ---
@@ -8,7 +8,7 @@ Usarei esse ReadMe para fazer anotações e passos a seguir.
 ## Gráficos 2D:
 - Caso o jogo inicie com um "blur" ao invés de uma imagem clean, faça o seguinte:
 - configurações do projeto
-- Renderização > Textura > Default Texture Filter > Nearest
+    - Renderização > Textura > Default Texture Filter > Nearest
 
 ## Cena2D (mundo)
 * Crie uma Cena2D - renomeie de Game ou fase1(como desejar, é aqui que o jogo irá rodar e onde você ira arrastar todos os objetos desejados (monstros, itens, player etc))
@@ -60,11 +60,11 @@ Usarei esse ReadMe para fazer anotações e passos a seguir.
       * No Script Killzone, devemos referenciar esse timer; para isso, arrastamos o timer para o codigo segurando ctrl na hora de soltar, isso irá criar um @onready var timer = $Timer (se criar algo diferente disso foi pq errou no ctrl)
          * significado: criou uma variável chamada timer que automaticamente acha o node $Timer. isso se chama "Path" (caminho) ele especifica um caminho pra chegar de um node para outro node na mesma Tree.
             * **EXEMPLO** 
-               * Game                 Para o Game acessar a Camera, o path seria: $Player/Camera, pois entre o Game e a Camera, tem um  Player.
+               * Game <------------ Para o Game acessar a Camera, o path seria: $Player/Camera, pois há um node entre os 2
                   * Player
-                     * Camera
-                  * Killzone          Para Killzone acessar o Timer, opath seria: $Timer, pois não há nada entre eles na Tree
-                     * Timer
+                     * Camera <------------
+                  * Killzone <------------ Para Killzone acessar o Timer, opath seria: $Timer, pois não há nada entre eles na Tree
+                     * Timer <------------
       * Abaixo da função on_body_entered > timer.start() para iniciar o Timer; agora precisamos de um trigger para ativar algo quando o timer acabar:
          * Com o Timer selecionado na Scene, vamos novamente em Node (ao lado de Inspector) e vamos conectar ao timeout(), isso irá criar uma nova função _on_timer_timeout(), é aqui que iremos reiniciar nosso jogo!
             * Para fazer isso, teremos de acessar a Game Tree e reiniciar a cena atual, então abaixo da função: get_tree().reload_current_scene() 
