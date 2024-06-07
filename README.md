@@ -10,6 +10,8 @@
 - configurações do projeto
     - Renderização > Textura > Default Texture Filter > Nearest
 
+
+
 ## Cena2D (mundo)
 * Crie uma Cena2D - renomeie de Game ou fase1(como desejar, é aqui que o jogo irá rodar e onde você ira arrastar todos os objetos desejados (monstros, itens, player etc))
 * Crie uma Camera2D - Dê o zoom que desejar para aumentar ou diminuir a tela
@@ -39,6 +41,7 @@
     * A partir daqui pode testar a animação e adicionar a velocidade ou diminuir, como desejar.
     * Para uma boa prática de programação, renomeie as animações de acordo "Idle, run, death, hit..."
     * Arraste a imagem para cima da linha
+    * para adicionar novas animações, clique no primeiro botão perto do Autoplay e repita todo o processo.
 * CollisionShape -
    * em Shape, adicione o formato desejado (NewCircle,NewCapsule...)
 * No Node principal (player)
@@ -46,6 +49,8 @@
    * Pode adicionar o template já pronto para facilitar, mas futuramente altere para ficar bem de acordo com o tipo de jogo.
 * no Inspector > Ordering: Coloque Z Index por volta de 5, para que o jogador sempre seja o primeiro no GameTree, sempre renderizado primeiro.
 * no Inspector > Collision: Coloque o player no Layer 2, para diferenciar do restante dos itens. (Agora todos os objetos que quiser colidir só com o player, coloque-os em Mask 2)
+
+
 
 ## Morte:
 * Na Camera2D > Inspector(lateral direita):
@@ -70,6 +75,31 @@
             * Para fazer isso, teremos de acessar a Game Tree e reiniciar a cena atual, então abaixo da função: get_tree().reload_current_scene() 
 
             
+
+## Melhorando controles e animação do Player:
+* Barra superior > Projeto > Configurações de projeto > mapa de entrada:
+   * Adicionar Nova Ação: é aqui que adicionaremos os botões do jogo.
+   * adicione pulo, esquerda, direita, interação, ataque e o que mais desejar
+   * no "+" ao lado dos botões,  é onde designamos os botões para esses movimentos. Podemos usar 2 botões para a mesma ação, ex: andar para a direita "->" e "D"
+* Por padrão, o Script do Godot usa controles que foram feitos para  navegar pela UI. Agora que criamos os botões, podemos substituí-los no Script (onde estiver amarelo fazendo menção a UI, colocamos os nomes dos botões)
+* Para girar o personagem junto com a direção:
+   * No Script do Player, precisamos referenciar o node AnimatedSprite (arrastar pra dentro do script com CTRL)
+   * Na parte de movimentação que acabamos de trocar os nomes (var direction), criaremos linhas para girar o sprite
+   * if direction > 0:
+      * animated_sprite.flip_h = false
+   * elif direction < 0:
+      * animated_sprite.flip_h = true
+
+* Para trocar a animação dependendo da animação: (é bom separar por blocos e comentários, como no python!)
+* Para diferenciar o pulo dos passos, temos que chegar se o personagem está no chão:
+   * if  is_on_floor():    
+      * if direction == 0:
+         * animated_sprite.play("idle")
+      * else:
+         * animated_sprite.play("run")
+   
+   * else: 
+      * animated_sprite.play("jump")
 
 
 
