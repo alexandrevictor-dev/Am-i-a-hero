@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dv7772swut44e"]
+[gd_scene load_steps=8 format=3 uid="uid://dv7772swut44e"]
 
 [ext_resource type="Texture2D" uid="uid://ssswkp7yvbyl" path="res://assets/OakWoods/oak_woods_v1.0/oak_woods_tileset.png" id="1_qo7qp"]
 [ext_resource type="PackedScene" uid="uid://bnlqmni1vxkoy" path="res://scenes/player.tscn" id="1_ut2wp"]
+[ext_resource type="PackedScene" uid="uid://1go87m0jxnjw" path="res://scenes/killzone.tscn" id="3_7k3ny"]
+[ext_resource type="PackedScene" uid="uid://cp6eskq8m6ygg" path="res://scenes/KillFence.tscn" id="4_8hxwp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g1gul"]
 texture = ExtResource("1_qo7qp")
@@ -608,6 +610,9 @@ tile_size = Vector2i(24, 24)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_g1gul")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_a6rk0"]
+distance = -26.0
+
 [node name="Game" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -616,9 +621,20 @@ format = 2
 layer_0/tile_data = PackedInt32Array(65533, 393216, 7, 65534, 393216, 7, 65535, 393216, 7, 0, 393216, 7, 1, 393216, 7, 2, 458752, 7, 65532, 327680, 7, 65530, 458752, 9, 65529, 131072, 0, 65528, 131072, 0, 65527, 131072, 0, 65526, 131072, 0, 65525, 131072, 0, -11, 0, 8, -65547, 0, 7, -65546, 65536, 7, -65545, 131072, 7, -65544, 196608, 7, -6, 196608, 7, -7, 131072, 7, -8, 196608, 8, -13, 0, 7, -12, 65536, 7, -10, 65536, 1, -9, 65536, 1, 65523, 0, 0, 65524, 65536, 0, -4, 0, 5, -3, 65536, 5, -2, 131072, 5, -1, 196608, 5)
 
 [node name="Player" parent="." instance=ExtResource("1_ut2wp")]
-position = Vector2(-7, -3)
+position = Vector2(0, -4)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(8, -12)
-zoom = Vector2(4, 4)
+position = Vector2(0, 4)
+zoom = Vector2(5, 5)
+limit_bottom = 35
+limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="Killzone" parent="." instance=ExtResource("3_7k3ny")]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("WorldBoundaryShape2D_a6rk0")
+
+[node name="Killzone2" parent="." instance=ExtResource("4_8hxwp")]
+position = Vector2(61, -3)
