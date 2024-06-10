@@ -102,4 +102,16 @@
       * animated_sprite.play("jump")
 
 
-
+## Parallax:
+* Crie um ParallaxBackground
+   * Crie um ParallaxLayer
+      * Crie um Sprite
+* Multiplique o ParallaxLayer de acordo com quantos background irão compor o cenário
+* Arraste o background para dentro de Sprite> Texture
+* No Inspector>  Mirroring> coloque o valor da largura da imagem (320x180)
+* No Inspector> Scale> é onde determinamos a intensidade do movimento (Use números quebrados para não atrapalhar o restante do jogo: 0.1, 0.2, 0.3....)/ colocar as nuvens em 0, já que elas não tem que se mover apenas quando caminhamos.
+   * Quanto maior o valor, mais próximo ele está de você
+* Para as nuvens, Adicione um Script no ParallaxLayer dela:
+   * export(float) var CLOUD_SPEED = -15
+   * func _process(delta) -> void:
+      * self.motion_offset.x += CLOUD_SPEED * delta
