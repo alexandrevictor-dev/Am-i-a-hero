@@ -97,7 +97,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Run",
-"speed": 9.0
+"speed": 10.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sv8j1"]
@@ -111,8 +111,9 @@ script = ExtResource("1_6j312")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(7, -7)
 sprite_frames = SubResource("SpriteFrames_corcm")
-animation = &"Jump"
+animation = &"Run"
 autoplay = "Idle"
+frame_progress = 0.53849
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 light_mask = 2
