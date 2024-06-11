@@ -116,3 +116,17 @@
    * export(float) var CLOUD_SPEED = -15
    * func _process(delta) -> void:
       * self.motion_offset.x += CLOUD_SPEED * delta
+
+
+## Luz e Sombras:
+* Crie um CanvasModulate
+   * Escolha uma cor mais escura
+* No scene Player (e onde quiser adicionar a luz):
+   * Crie um PointLight2D
+      * No Inspector: Carregue a imagem de light ou Crie um em Texture> NewGradient2D > Fill > Radial > em Gradient: inverta as cores, arraste o círculo para o meio do quadrado e diminua até o círculo caber dentro do quadrado
+      * Configure o tamanho e força da luz como quiser
+      * Shadow Enabled
+* No Tilemap > Tileset (Inspector) > Rendering > Occlusion Layer > Add Element (lembrando que é bom para objetos, móveis, plataformas etc.)
+   * Em Tileset(Em baixo) > Rendering > Occlusion Layer 0 (parecido com a criação de tileset)
+   * filter: PCF13 / filter smooth: 1,5 ou como desejar
+
