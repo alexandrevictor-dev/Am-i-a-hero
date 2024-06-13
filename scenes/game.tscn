@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dv7772swut44e"]
+[gd_scene load_steps=14 format=3 uid="uid://dv7772swut44e"]
 
 [ext_resource type="Texture2D" uid="uid://ssswkp7yvbyl" path="res://assets/OakWoods/oak_woods_v1.0/oak_woods_tileset.png" id="1_qo7qp"]
 [ext_resource type="PackedScene" uid="uid://bnlqmni1vxkoy" path="res://scenes/player.tscn" id="1_ut2wp"]
@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://cllykgb21dk8x" path="res://assets/OakWoods/oak_woods_v1.0/background/background_layer_1.png" id="4_wtv73"]
 [ext_resource type="Texture2D" uid="uid://cppvtxek0crev" path="res://assets/OakWoods/oak_woods_v1.0/background/background_layer_2.png" id="5_7v06o"]
 [ext_resource type="Texture2D" uid="uid://dt4rkarp1b8j" path="res://assets/OakWoods/oak_woods_v1.0/background/background_layer_3.png" id="6_fwoli"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_l0fnr"]
+polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g1gul"]
 texture = ExtResource("1_qo7qp")
@@ -93,7 +96,6 @@ texture_region_size = Vector2i(24, 24)
 15:1/0 = 0
 15:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 15:1/0/physics_layer_0/angular_velocity = 0.0
-15:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 17:1/0 = 0
 17:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 17:1/0/physics_layer_0/angular_velocity = 0.0
@@ -229,10 +231,12 @@ texture_region_size = Vector2i(24, 24)
 3:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:6/0/physics_layer_0/angular_velocity = 0.0
 9:6/0 = 0
+9:6/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_l0fnr")
 9:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:6/0/physics_layer_0/angular_velocity = 0.0
 9:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 10:6/0 = 0
+10:6/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_l0fnr")
 10:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:6/0/physics_layer_0/angular_velocity = 0.0
 10:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
@@ -285,10 +289,12 @@ texture_region_size = Vector2i(24, 24)
 7:7/0/physics_layer_0/angular_velocity = 0.0
 7:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 9:7/0 = 0
+9:7/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_l0fnr")
 9:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:7/0/physics_layer_0/angular_velocity = 0.0
 9:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 10:7/0 = 0
+10:7/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_l0fnr")
 10:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:7/0/physics_layer_0/angular_velocity = 0.0
 10:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
@@ -321,10 +327,12 @@ texture_region_size = Vector2i(24, 24)
 3:8/0/physics_layer_0/angular_velocity = 0.0
 3:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 9:8/0 = 0
+9:8/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_l0fnr")
 9:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:8/0/physics_layer_0/angular_velocity = 0.0
 9:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 10:8/0 = 0
+10:8/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_l0fnr")
 10:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:8/0/physics_layer_0/angular_velocity = 0.0
 10:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
@@ -371,10 +379,12 @@ texture_region_size = Vector2i(24, 24)
 7:9/0/physics_layer_0/angular_velocity = 0.0
 7:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 9:9/0 = 0
+9:9/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_l0fnr")
 9:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:9/0/physics_layer_0/angular_velocity = 0.0
 9:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 10:9/0 = 0
+10:9/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_l0fnr")
 10:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:9/0/physics_layer_0/angular_velocity = 0.0
 10:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
@@ -403,10 +413,12 @@ texture_region_size = Vector2i(24, 24)
 3:10/0/physics_layer_0/angular_velocity = 0.0
 3:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 9:10/0 = 0
+9:10/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_l0fnr")
 9:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:10/0/physics_layer_0/angular_velocity = 0.0
 9:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 10:10/0 = 0
+10:10/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_l0fnr")
 10:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:10/0/physics_layer_0/angular_velocity = 0.0
 10:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
@@ -609,21 +621,39 @@ texture_region_size = Vector2i(24, 24)
 
 [sub_resource type="TileSet" id="TileSet_8susd"]
 tile_size = Vector2i(24, 24)
+occlusion_layer_0/light_mask = 1
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_g1gul")
+
+[sub_resource type="Gradient" id="Gradient_0wcgj"]
+offsets = PackedFloat32Array(0, 0.824675)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ua7d6"]
+gradient = SubResource("Gradient_0wcgj")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.087156, 0.0825688)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_a6rk0"]
 distance = -26.0
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6es74"]
+normal = Vector2(1, 0)
+distance = 3.0
+
 [node name="Game" type="Node2D"]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.178928, 0.261346, 0.308114, 1)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_8susd")
 format = 2
-layer_0/tile_data = PackedInt32Array(65533, 393216, 7, 65534, 393216, 7, 65535, 393216, 7, 0, 393216, 7, 1, 393216, 7, 2, 458752, 7, 65532, 327680, 7, 65530, 458752, 9, 65529, 131072, 0, 65528, 131072, 0, 65527, 131072, 0, 65526, 131072, 0, 65525, 131072, 0, -11, 0, 8, -65547, 0, 7, -65546, 65536, 7, -65545, 131072, 7, -65544, 196608, 7, -6, 196608, 7, -7, 131072, 7, -8, 196608, 8, -13, 0, 7, -12, 65536, 7, -10, 65536, 1, -9, 65536, 1, 65523, 65536, 0, 65524, 65536, 0, -4, 0, 5, -3, 65536, 5, -2, 131072, 5, -1, 196608, 5, 3, 393216, 7, 4, 393216, 7, 5, 393216, 7, 6, 393216, 7, 7, 393216, 7, 8, 393216, 7, 9, 393216, 7, 10, 393216, 7, 11, 393216, 7, 12, 393216, 7, 65522, 65536, 0, 65521, 65536, 0, 65520, 65536, 0, 65519, 65536, 0, 65518, 0, 0)
+layer_0/tile_data = PackedInt32Array(65533, 393216, 7, 65534, 393216, 7, 65535, 393216, 7, 0, 393216, 7, 1, 393216, 7, 2, 458752, 7, 65532, 327680, 7, 65530, 458752, 9, 65529, 131072, 0, 65528, 131072, 0, 65527, 131072, 0, 65526, 131072, 0, 65525, 131072, 0, -11, 0, 8, -65547, 0, 7, -65546, 65536, 7, -65545, 131072, 7, -65544, 196608, 7, -6, 196608, 7, -7, 131072, 7, -8, 196608, 8, -13, 0, 7, -12, 65536, 7, -10, 65536, 1, -9, 65536, 1, 65523, 65536, 0, 65524, 65536, 0, -4, 0, 5, -3, 65536, 5, -2, 131072, 5, -1, 196608, 5, 3, 393216, 7, 4, 393216, 7, 5, 393216, 7, 6, 393216, 7, 7, 393216, 7, 8, 393216, 7, 9, 393216, 7, 10, 393216, 7, 11, 393216, 7, 12, 393216, 7, 65522, 65536, 0, 65521, 65536, 0, 65520, 65536, 0, 65519, 65536, 0, 65518, 0, 0, -131068, 589824, 6, -196602, 589824, 6, -65529, 589824, 6, -65528, 983040, 1, -65527, 983040, 1, -131063, 983040, 1, -131064, 983040, 1, -196600, 983040, 1, -196599, 983040, 1, -196601, 983040, 1, -131065, 983040, 1, -262136, 983040, 1, -262135, 983040, 1, -262137, 983040, 1, -262138, 983040, 1, -262139, 983040, 1, -262140, 983040, 1, -262141, 983040, 1, -196605, 983040, 1, -131069, 983040, 1, -65533, 983040, 1, -65534, 983040, 1, -131070, 983040, 1, -196606, 983040, 1, -262142, 983040, 1, -196603, 983040, 1, -196604, 983040, 1, -131067, 983040, 1, -131066, 983040, 1, -65530, 983040, 1, -65531, 983040, 1, -65532, 983040, 1, -327678, 983040, 1, -327677, 983040, 1, -327676, 983040, 1, -327675, 983040, 1, -327674, 983040, 1, -327673, 983040, 1, -327672, 983040, 1, -327671, 983040, 1, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, -65516, 0, 0, -65515, 0, 0, -65514, 0, 0, 22, 0, 0, 21, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 0, 0, 27, 0, 0, 28, 0, 0, 29, 0, 0, 30, 0, 0, 31, 0, 0, 32, 0, 0, 33, 0, 0, 34, 0, 0, 35, 0, 0, 36, 0, 0, 37, 0, 0, 38, 0, 0, 39, 0, 0, 40, 0, 0, 41, 0, 0, 42, 0, 0)
 
 [node name="Player" parent="." instance=ExtResource("1_ut2wp")]
-position = Vector2(-375, -9)
+position = Vector2(-333, -7)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(26, -24)
@@ -633,6 +663,16 @@ limit_bottom = 35
 limit_smoothed = true
 position_smoothing_enabled = true
 
+[node name="PointLight2D" type="PointLight2D" parent="Player"]
+position = Vector2(8, -10)
+color = Color(0.868069, 0.714122, 0.493627, 1)
+energy = 1.14
+shadow_enabled = true
+shadow_filter = 2
+shadow_filter_smooth = 1.5
+texture = SubResource("GradientTexture2D_ua7d6")
+texture_scale = 1.6
+
 [node name="Killzone" parent="." instance=ExtResource("3_7k3ny")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
@@ -640,8 +680,11 @@ shape = SubResource("WorldBoundaryShape2D_a6rk0")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
+[node name="CanvasModulate2" type="CanvasModulate" parent="ParallaxBackground"]
+color = Color(0.178928, 0.261346, 0.308114, 1)
+
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-430, -166)
+position = Vector2(-432, -174)
 motion_scale = Vector2(0.1, 1)
 motion_mirroring = Vector2(384, 0)
 
@@ -651,7 +694,7 @@ texture = ExtResource("4_wtv73")
 centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-430, -166)
+position = Vector2(-432, -174)
 motion_scale = Vector2(0.2, 1)
 motion_mirroring = Vector2(384, 0)
 
@@ -661,7 +704,7 @@ texture = ExtResource("5_7v06o")
 centered = false
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-430, -166)
+position = Vector2(-432, -174)
 motion_scale = Vector2(0.3, 1)
 motion_mirroring = Vector2(384, 0)
 
@@ -669,3 +712,10 @@ motion_mirroring = Vector2(384, 0)
 scale = Vector2(1.2, 1.2)
 texture = ExtResource("6_fwoli")
 centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-367, -19)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-67, -3)
+shape = SubResource("WorldBoundaryShape2D_6es74")
