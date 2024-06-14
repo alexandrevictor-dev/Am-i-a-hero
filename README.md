@@ -130,3 +130,11 @@
    * Em Tileset(Em baixo) > Rendering > Occlusion Layer 0 (parecido com a criação de tileset)
    * filter: PCF13 / filter smooth: 1,5 ou como desejar
 
+
+## Pulo Duplo:
+* Declare uma variável chamada MAX_JUMP = 1
+* Declare uma variável chamada jump_count = 0
+* Na área de pulo, substitua o "is_on_floor" como condicional para pular por (jump counter < MAX_JUMP)
+   * adicione jump_count += 1
+* Na área de Add gravity tem um if, coloque um else (ou  seja, está no chão), jump_count = 0
+
