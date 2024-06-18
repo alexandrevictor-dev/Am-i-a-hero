@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://bnlqmni1vxkoy"]
+[gd_scene load_steps=23 format=3 uid="uid://bnlqmni1vxkoy"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_6j312"]
 [ext_resource type="Texture2D" uid="uid://cj15idiy8oe85" path="res://assets/01 - Hobbit/Hobbit-my/Hobbit - Idle1.png" id="2_jok35"]
@@ -10,11 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://dhyxfwxqhdsl1" path="res://assets/01 - Hobbit/Hobbit-my/Hobbit - jumpt3.png" id="8_kolbq"]
 [ext_resource type="Texture2D" uid="uid://gqdug00oatag" path="res://assets/01 - Hobbit/Hobbit-my/Hobbit - jumpt4.png" id="9_t4v3w"]
 [ext_resource type="Texture2D" uid="uid://cy0q03xc4riyt" path="res://assets/01 - Hobbit/Hobbit-my/Hobbit - jumpt5.png" id="10_qs2u4"]
-[ext_resource type="Texture2D" uid="uid://dcd3sn7iql0uc" path="res://assets/01 - Hobbit/Hobbit-my/Hobbit - jumpt6.png" id="11_d1m0b"]
-[ext_resource type="Texture2D" uid="uid://dftl6p8hktsns" path="res://assets/01 - Hobbit/Hobbit-my/Hobbit - jumpt7.png" id="12_lsu2u"]
-[ext_resource type="Texture2D" uid="uid://bcjfoprphhygi" path="res://assets/01 - Hobbit/Hobbit-my/Hobbit - jumpt8.png" id="13_0xw2r"]
-[ext_resource type="Texture2D" uid="uid://bpdyr5iavyfxd" path="res://assets/01 - Hobbit/Hobbit-my/Hobbit - jumpt9.png" id="14_derbb"]
-[ext_resource type="Texture2D" uid="uid://dvlqxth87lsxb" path="res://assets/01 - Hobbit/Hobbit-my/Hobbit - jumpt10.png" id="15_g7xct"]
 [ext_resource type="Texture2D" uid="uid://c5ngj40335msp" path="res://assets/01 - Hobbit/Hobbit-my/Hobbit - run1.png" id="16_i3lco"]
 [ext_resource type="Texture2D" uid="uid://7ndnioy6vuif" path="res://assets/01 - Hobbit/Hobbit-my/Hobbit - run2.png" id="17_k1xsa"]
 [ext_resource type="Texture2D" uid="uid://pijxq2w3kqww" path="res://assets/01 - Hobbit/Hobbit-my/Hobbit - run3.png" id="18_1xteq"]
@@ -54,27 +49,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("8_kolbq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_t4v3w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_qs2u4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_d1m0b")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_lsu2u")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_0xw2r")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_derbb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_g7xct")
 }],
 "loop": false,
 "name": &"Jump",
@@ -114,6 +88,17 @@ animations = [{
 "loop": true,
 "name": &"Run",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_t4v3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_qs2u4")
+}],
+"loop": false,
+"name": &"fall",
+"speed": 9.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sv8j1"]
@@ -127,7 +112,7 @@ script = ExtResource("1_6j312")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(7, -7)
 sprite_frames = SubResource("SpriteFrames_corcm")
-animation = &"Idle"
+animation = &"Jump"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -98,8 +98,11 @@
       * else:
          * animated_sprite.play("run")
    
-   * else: 
-      * animated_sprite.play("jump")
+   else:
+		if velocity.y <0:
+			animated_sprite_2d.play("jump")
+		elif velocity.y >200:     <-------------------- adicionei essa linha: Se a velocidade em y for menor que 0, toca o  jump, senão, toca o fall
+			animated_sprite_2d.play("fall")
 
 
 ## Parallax:
@@ -108,8 +111,10 @@
       * Crie um Sprite
 * Multiplique o ParallaxLayer de acordo com quantos background irão compor o cenário
 * Arraste o background para dentro de Sprite> Texture
-* Caso a imagem seja menor que o cenário, altere o scale
-* No Inspector>  Mirroring> coloque o valor da largura da imagem escolhida multiplicando pelo scale (caso tenha alterado no Sprite2D)
+* Caso a imagem seja menor que o cenário, altere o scale em Sprite
+* No Inspector>  Mirroring> coloque o valor da largura da imagem escolhida multiplicando pelo scale (caso tenha alterado no Sprite2D)  
+* desmarque a corrente e altere o scale somente em X
+* Caso tenha problema na renderização do parallax, duplique o sprite, o mirroring e arraste a segunda imagem para o lado, no meio do espaço entre a imagem espelhada
 * ParallaxLayer, No Inspector> Scale> é onde determinamos a intensidade do movimento (Use números quebrados para não atrapalhar o restante do jogo: 0.1, 0.2, 0.3....)/ colocar as nuvens em 0, já que elas não tem que se mover apenas quando caminhamos.
    * Quanto maior o valor, mais próximo ele está de você
 * Para as nuvens, Adicione um Script no ParallaxLayer dela:
@@ -137,4 +142,3 @@
 * Na área de pulo, substitua o "is_on_floor" como condicional para pular por (jump counter < MAX_JUMP)
    * adicione jump_count += 1
 * Na área de Add gravity tem um if, coloque um else (ou  seja, está no chão), jump_count = 0
-
