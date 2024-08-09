@@ -112,7 +112,7 @@
 * Multiplique o ParallaxLayer de acordo com quantos background irão compor o cenário
 * Arraste o background para dentro de Sprite> Texture
 * Caso a imagem seja menor que o cenário, altere o scale em Sprite
-* No Inspector>  Mirroring> coloque o valor da largura da imagem escolhida multiplicando pelo scale (caso tenha alterado no Sprite2D)  
+* No Inspector>  Mirroring> coloque o valor da largura da imagem escolhida multiplicando pelo scale (caso tenha alterado no Sprite2D **E PRECISA SER NO SPRITE 2D, NAO NO PARALLAX!!**)  
 * desmarque a corrente e altere o scale somente em X
 * Caso tenha problema na renderização do parallax, duplique o sprite, o mirroring e arraste a segunda imagem para o lado, no meio do espaço entre a imagem espelhada
 * ParallaxLayer, No Inspector> Scale> é onde determinamos a intensidade do movimento (Use números quebrados para não atrapalhar o restante do jogo: 0.1, 0.2, 0.3....)/ colocar as nuvens em 0, já que elas não tem que se mover apenas quando caminhamos.
@@ -142,3 +142,16 @@
 * Na área de pulo, substitua o "is_on_floor" como condicional para pular por (jump counter < MAX_JUMP)
    * adicione jump_count += 1
 * Na área de Add gravity tem um if, coloque um else (ou  seja, está no chão), jump_count = 0
+
+
+## Instalando Plugins:
+* Acessa o github do plugin desejado, nesse caso "Dialogic"
+   * na parte direita: Release
+      * na parte inferior: source code
+* extrai o arquivo e paga só o conteúdo da pasta "addons"
+* dentro do PROJETO godot desejado, crie uma pasta chamada "addons"
+* agora abrindo o jogo, vá em Projeto > Configurações do projeto > Plugins > Habilitar
+
+## Diálogos:
+*
+

@@ -114,6 +114,7 @@ position = Vector2(7, -7)
 sprite_frames = SubResource("SpriteFrames_corcm")
 animation = &"Jump"
 autoplay = "Idle"
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 light_mask = 2

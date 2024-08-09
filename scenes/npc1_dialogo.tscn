@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bh4m6dhkxfbpv"]
+
+[ext_resource type="Texture2D" uid="uid://cqsumkva014ko" path="res://icon.svg" id="1_478rw"]
+
+[node name="NPC1 DIALOGO" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(23, -20)
+scale = Vector2(0.28125, 0.28125)
+texture = ExtResource("1_478rw")
+
+[node name="Timer" type="Timer" parent="."]

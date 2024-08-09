@@ -1,0 +1,29 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "npc1",
+"description": "Npc de teste para o jogo do Romario",
+"display_name": "npc1",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"npc1": {
+"export_overrides": {
+"image": "\"icon.svg\""
+},
+"mirror": false,
+"offset": Vector2(0, -160),
+"scale": 0.2,
+"scene": ""
+}
+},
+"scale": 1.0
+}
