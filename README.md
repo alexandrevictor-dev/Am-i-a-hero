@@ -8,8 +8,7 @@
 
 <br clear="both">
 
-
-  ![Screenshot_31](https://github.com/user-attachments/assets/ae683dc4-64b2-4205-9fda-e5fdf6e8eb8a) ![Screenshot_32](https://github.com/user-attachments/assets/9790f26d-5ff6-4155-baa2-c3797546f364) ![Screenshot_33](https://github.com/user-attachments/assets/7482cada-b873-4bc7-90be-db9f4f349133)
+![Screenshot_31](https://github.com/user-attachments/assets/ae683dc4-64b2-4205-9fda-e5fdf6e8eb8a) ![Screenshot_32](https://github.com/user-attachments/assets/9790f26d-5ff6-4155-baa2-c3797546f364) ![Screenshot_33](https://github.com/user-attachments/assets/7482cada-b873-4bc7-90be-db9f4f349133)
 
 
 ###
@@ -34,6 +33,21 @@
 
 ###
 
-O jogo ainda está em desenvolvimento, portanto não há uma demo executável mas, você pode Instalar a engine [Godot](https://godotengine.org/download/windows/) e rodar o projeto.
+O jogo ainda está em desenvolvimento, portanto não há uma demo executável mas, você pode Instalar a engine [Godot](https://godotengine.org/download/windows/) e rodar o projeto
+
+###
+
+<h2 align="left">Autor</h2>
+
+###
+
+<div align="center">
+  <img height="200" src="https://github.com/user-attachments/assets/49c07821-eadc-4745-ab52-8177a79de96-d" />
+</div>
+
+
+###
+
+<h3 align="center">Alexandre Victor Rodrigues</h3>
 
 ###
