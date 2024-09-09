@@ -17,7 +17,7 @@
 
 ###
 
-<p align="left">"Am i a Hero?" é um jogo de plataforma 2D desenvolvido com Assets e ferramentas Open Source com o intuito de aprender funcionalidades da engine Godot bem como sua linguagem de programação GD Script.</p>
+<p align="left">"Am i a Hero?" é um jogo de plataforma 2D desenvolvido com Assets e ferramentas Open Source com o intuito de aprendizagem das funcionalidades da engine Godot bem como sua linguagem de programação GD Script.</p>
 
 ###
 
