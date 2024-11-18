@@ -37,7 +37,9 @@ O desenvolvimento de "Am I a Hero?" busca também explorar os diferentes aspecto
 
 ###
 
-O jogo ainda está em desenvolvimento, portanto não há uma demo executável mas, você pode Instalar a engine [Godot](https://godotengine.org/download/windows/) e rodar o projeto
+Faça o download da Engine [Godot](https://godotengine.org/download/windows/)
+Baixe o código e importe para a sua pasta de projetos
+Rode o projeto e divirta-se!
 
 ###
 
@@ -46,8 +48,9 @@ O jogo ainda está em desenvolvimento, portanto não há uma demo executável ma
 ###
 
 <div align="center">
-  <img height="200" src="https://github.com/user-attachments/assets/49c07821-eadc-4745-ab52-8177a79de96-d" />
+  <img height="200" src="https://github.com/user-attachments/assets/88fc23a0-1d15-494f-aa32-3c89dbab3eab" alt="profile-pic" />
 </div>
+
 
 
 ###
