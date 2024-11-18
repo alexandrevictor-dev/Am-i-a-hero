@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">Projeto desenvolvido para aprendizado e exploraração de diferentes aspectos da criação de jogos de plataforma, como a construção de níveis, mecânicas de movimento, física e interações.</p>.</p>
+<p align="left">Projeto desenvolvido para aprendizado e exploraração de diferentes aspectos da criação de jogos de plataforma, como a construção de níveis, mecânicas de movimento, física e interações.</p>
 
 ###
 
