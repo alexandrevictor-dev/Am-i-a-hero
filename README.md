@@ -21,7 +21,6 @@
   
 O jogo se passa em um mundo compacto, com poucas fases que testam as habilidades do jogador. Ao longo dessa curta história, o jogador enfrentará obstáculos e inimigos, fazendo o que for necessário para salvar alguém muito importante.
 
-O desenvolvimento de "Am I a Hero?" busca também explorar os diferentes aspectos da criação de jogos de plataforma, como a construção de níveis, mecânicas de movimento, física e interações, proporcionando uma experiência de aprendizado imersiva tanto para desenvolvedores iniciantes quanto para os jogadores.</p>
 
 ###
 
@@ -37,9 +36,9 @@ O desenvolvimento de "Am I a Hero?" busca também explorar os diferentes aspecto
 
 ###
 
-Faça o download da Engine [Godot](https://godotengine.org/download/windows/)
-Baixe o código e importe para a sua pasta de projetos
-Rode o projeto e divirta-se!
+- Faça o download da Engine [Godot](https://godotengine.org/download/windows/)
+- Baixe o código e importe para a sua pasta de projetos
+- Rode o projeto e divirta-se!
 
 ###
 
